@@ -1,0 +1,198 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #1a73e8;
+    text-align: center;
+}
+
+/* File upload styles */
+label {
+    font-size: 1rem;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    border-color: #1a73e8;
+}
+
+/* Chart container */
+#chart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* Target time container */
+#target-time {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#target-time label {
+    font-size: 1rem;
+    color: #333;
+}
+
+#target-time input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Points info container */
+#points-info {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Individual point info */
+.point-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.point-info:last-child {
+    border-bottom: none;
+}
+
+.point-info .point-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.point-info .point-header span {
+    font-size: 1rem;
+    color: #555;
+}
+
+.point-info .point-header button {
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.point-info .point-header button:hover {
+    background-color: #155cb0;
+}
+
+.point-info .nutrition-select {
+    margin-top: 10px;
+}
+
+.point-info .nutrition-select label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.point-info .nutrition-select select {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.nutrition-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.nutrition-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.nutrition-item span {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.nutrition-item button {
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 3px 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.nutrition-item button:hover {
+    background-color: #c0392b;
+}
+
+/* Average consumption block */
+#average-consumption {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#average-consumption h2 {
+    font-size: 1.5rem;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+#average-consumption p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}

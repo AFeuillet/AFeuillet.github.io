@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPX Elevation Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>GPX Elevation Profile</h1>
+    <label for="file-upload">Upload GPX File:</label>
+    <input type="file" id="file-upload" accept=".gpx">
+
+    <div id="chart"></div>
+
+    <div id="target-time">
+        <label for="hours">Objectif temps total:</label>
+        <input type="number" id="hours" min="0" value="0" placeholder="Heures">
+        <input type="number" id="minutes" min="0" value="0" placeholder="Minutes">
+        <input type="number" id="seconds" min="0" value="0" placeholder="Secondes">
+    </div>
+
+    <div id="points-info"></div>
+    <div id="average-consumption">
+        <h2>Consommation Moyenne</h2>
+        <p id="carbs-consumption">Glucides: Moyenne par heure: 0g, Total: 0g</p>
+        <p id="calories-consumption">Calories: Moyenne par heure: 0 Kcal, Total: 0 Kcal</p>
+        <p id="protein-consumption">Protéines: Moyenne par heure: 0g, Total: 0g</p>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
