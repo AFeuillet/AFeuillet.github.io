@@ -97,25 +97,27 @@
         <h2>Magie, Sport et Fantaisie</h2>
         <p>Suivez les aventures extraordinaires où les sorts magiques se conjuguent aux mouvements de la gymnastique moderne au cœur d'un monde peuplé de licornes enchantées.</p>
     </div>
-    <button id="sound-toggle" onclick="toggleSound()">🔊 Activer le son</button>
-    <!-- Vidéo en arrière-plan -->
+    <button id="sound-toggle">🔊 Activer le son</button>
+
     <video autoplay muted loop playsinline class="video-background" id="lougz-video">
         <source src="lougz.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la lecture de vidéos.
     </video>
     <script>
-        function toggleSound() {
-            var video = document.getElementById("lougz-video");
-            var button = document.getElementById("sound-toggle");
+        document.addEventListener("DOMContentLoaded", function() {
+            const video = document.getElementById("lougz-video");
+            const button = document.getElementById("sound-toggle");
             
-            if (video.muted) {
-                video.muted = false;
-                button.innerHTML = "🔇 Couper le son";
-            } else {
-                video.muted = true;
-                button.innerHTML = "🔊 Activer le son";
-            }
-        }
+            button.addEventListener("click", function() {
+                if (video.muted) {
+                    video.muted = false;
+                    button.innerHTML = "🔇 Couper le son";
+                } else {
+                    video.muted = true;
+                    button.innerHTML = "🔊 Activer le son";
+                }
+            });
+        });
     </script>
 </body>
 </html>
