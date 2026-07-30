@@ -1,19 +1,87 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Éléments SEO principaux -->
+    <title>Lougz - L'école de magie, gymnastique et licornes</title>
+    <meta name="description" content="Plongez dans l'univers fantastique de Lougz. Une école extraordinaire pour filles où la magie, la gymnastique acrobatique et les licornes se rencontrent.">
+    <meta name="keywords" content="Lougz, école de magie, gymnastique, licornes, univers fantastique, école pour filles, fantasy">
+    <link rel="canonical" href="https://lougz.com/">
+
+    <!-- Balises Open Graph (pour un beau partage sur les réseaux sociaux : Facebook, Discord, LinkedIn...) -->
+    <meta property="og:title" content="Lougz - L'école de magie, gymnastique et licornes">
+    <meta property="og:description" content="Découvrez un univers fantastique unique où la magie et la gymnastique s'unissent dans une école extraordinaire.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lougz.com/">
+    <!-- Pensez à ajouter une image d'aperçu : <meta property="og:image" content="https://lougz.com/apercu.jpg"> -->
+
+    <!-- Styles CSS -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        /* Vidéo en arrière-plan plein écran */
+        .video-background {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Classe pour le contenu textuel optimisé SEO mais discret ou accessible aux lecteurs d'écran */
+        .seo-content {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Optionnel : Si vous souhaitez ajouter un titre visible par-dessus la vidéo par la suite */
+        .visible-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+            text-align: center;
+        }
+    </style>
+
+    <!-- Données structurées (Schema.org) pour aider Google à comprendre le site -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Lougz",
+      "url": "https://lougz.com/",
+      "description": "Univers fantastique mêlant magie, gymnastique et licornes dans une école pour filles."
+    }
+    </script>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;html&gt;</span></p>
-<p class="p1"><span class="s1">Hello</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+    <!-- Contenu textuel riche pour le SEO (masqué visuellement pour ne pas perturber le design de la vidéo, mais parfaitement lisible par les robots de Google) -->
+    <div class="seo-content">
+        <h1>Lougz - École fantastique de magie et gymnastique avec des licornes</h1>
+        <p>Bienvenue sur Lougz.com, le site officiel d'un univers fantastique hors du commun. Entrez dans notre école secrète pour filles dédiée à l'apprentissage de la magie, aux prouesses de gymnastique artistique et acrobatique, le tout en harmonie avec de majestueuses licornes.</p>
+        <h2>Magie, Sport et Fantaisie</h2>
+        <p>Suivez les aventures extraordinaires où les sorts magiques se conjuguent aux mouvements de la gymnastique moderne au cœur d'un monde peuplé de licornes enchantées.</p>
+    </div>
+
+    <!-- Vidéo en arrière-plan -->
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="votre-video.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
 </body>
 </html>
