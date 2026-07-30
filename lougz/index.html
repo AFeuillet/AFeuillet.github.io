@@ -56,6 +56,26 @@
             text-shadow: 0 2px 4px rgba(0,0,0,0.8);
             text-align: center;
         }
+        /* Style du bouton pour réactiver le son */
+        #sound-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        #sound-toggle:hover {
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+        }
     </style>
 
     <!-- Données structurées (Schema.org) pour aider Google à comprendre le site -->
@@ -77,11 +97,25 @@
         <h2>Magie, Sport et Fantaisie</h2>
         <p>Suivez les aventures extraordinaires où les sorts magiques se conjuguent aux mouvements de la gymnastique moderne au cœur d'un monde peuplé de licornes enchantées.</p>
     </div>
-
+    <button id="sound-toggle" onclick="toggleSound()">🔊 Activer le son</button>
     <!-- Vidéo en arrière-plan -->
     <video autoplay muted loop playsinline class="video-background">
         <source src="lougz.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la lecture de vidéos.
     </video>
+    <script>
+        function toggleSound() {
+            var video = document.getElementById("my-video");
+            var button = document.getElementById("sound-toggle");
+            
+            if (video.muted) {
+                video.muted = false;
+                button.innerHTML = "🔇 Couper le son";
+            } else {
+                video.muted = true;
+                button.innerHTML = "🔊 Activer le son";
+            }
+        }
+    </script>
 </body>
 </html>
