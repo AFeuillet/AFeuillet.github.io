@@ -99,13 +99,13 @@
     </div>
     <button id="sound-toggle" onclick="toggleSound()">🔊 Activer le son</button>
     <!-- Vidéo en arrière-plan -->
-    <video autoplay muted loop playsinline class="video-background">
+    <video autoplay muted loop playsinline class="video-background" id="lougz-video">
         <source src="lougz.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la lecture de vidéos.
     </video>
     <script>
         function toggleSound() {
-            var video = document.getElementById("my-video");
+            var video = document.getElementById("lougz-video");
             var button = document.getElementById("sound-toggle");
             
             if (video.muted) {
